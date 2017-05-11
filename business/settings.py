@@ -80,8 +80,12 @@ WSGI_APPLICATION = 'business.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'sport_business',
+        'USER': 'admin',
+        'PASSWORD': 'szq814211077',
+        'HOST': '127.0.0.1',
+        'PORT': '3306',
     }
 }
 
